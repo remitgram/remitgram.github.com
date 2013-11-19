@@ -18,7 +18,7 @@ git commit -m "Random Branch Commit"
 
 git checkout master
 git merge $rand
-git commit -m "Merged from push commit"
+git commit -a
 
 git branch -D $rand
 
