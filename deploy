@@ -10,10 +10,3 @@ git branch $rand
 git checkout $rand
 git merge develop
 find * -maxdepth 0 -name 'dist' -prune -o -exec git rm -rf '{}' ';'
-git mv dist/* .
-rm -rf dist
-git rm -rf dist
-rm .bowerrc .editorconfig .gitattributes .gitignore .jshintrc
-git rm .bowerrc .editorconfig .gitattributes .gitignore .jshintrc
-git add .
-git commit -m "Random Branch Commit"
