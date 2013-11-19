@@ -1,15 +1,14 @@
 #!/bin/sh
 
-dt=$(date)
-
 grunt build
+git add dist
+git commit -m "Build commit"
 
-git branch -D master
-git branch master
+rand=$(date +%s)
 
-git checkout master
+git branch $rand
+git checkout $rand
 git merge develop
-
 find * -maxdepth 0 -name 'dist' -prune -o -exec git rm -rf '{}' ';'
 git mv dist/* .
 rm -rf dist
@@ -17,7 +16,4 @@ git rm -rf dist
 rm .bowerrc .editorconfig .gitattributes .gitignore .jshintrc
 git rm .bowerrc .editorconfig .gitattributes .gitignore .jshintrc
 git add .
-git commit -m "Push Commit"
-git push origin master
-
-git checkout develop
+git commit -m "Random Branch Commit"
