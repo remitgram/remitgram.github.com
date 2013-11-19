@@ -23,3 +23,6 @@ git commit -m "Merged from push commit"
 git branch -D $rand
 
 git push origin master
+
+echo "Deploy Completed"
+git checkout develop
