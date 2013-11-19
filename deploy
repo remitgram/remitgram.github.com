@@ -21,3 +21,7 @@ git merge $rand
 git commit -m "Merged from push commit"
 
 git branch -D $rand
+
+git push origin master
+
+git checkout develop
