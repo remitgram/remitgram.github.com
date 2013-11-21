@@ -260,8 +260,7 @@ module.exports = function (grunt) {
         'less',
         'imagemin',
         'svgmin',
-        'cssmin',
-        'htmlmin'
+        'cssmin'
       ]
     }
   });
