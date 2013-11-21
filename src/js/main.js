@@ -48,6 +48,6 @@ $(function(){
 
 $('.rotator').dynamo({
     speed: 500,
-    delay: 3500,
+    delay: 3000,
     callback: function() { console.log('All items have been shown') }
 });
