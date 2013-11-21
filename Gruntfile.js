@@ -262,6 +262,7 @@ module.exports = function (grunt) {
         'svgmin',
         'cssmin',
         'htmlmin'
+      ]
     }
   });
 
